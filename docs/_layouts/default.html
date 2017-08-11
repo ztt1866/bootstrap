@@ -22,11 +22,15 @@
 
     <div class="container bs-docs-container">
 
+      {% if page.fullwidth == true %}
+      <div class="main-content" role="main">
+        {{ content }}
+      </div>
+      {% else %}
       <div class="row">
-        <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
+        <div class="col-md-9" role="main">
           {{ content }}
         </div>
-        {% unless page.fullwidth == true %}
         <div class="col-md-3" role="complementary">
           <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
             <ul class="nav bs-docs-sidenav">
@@ -55,10 +59,10 @@
             </a>
             {% endif %}
           </nav>
-        </div>
-        {% endunless %}
-      </div>
-    </div>
+        </div> <!-- .col-md-3-->
+      </div> <!-- .row -->
+      {% endif %}
+    </div>  <!-- .container -->
 
     {% include footer.html %}
   </body>
