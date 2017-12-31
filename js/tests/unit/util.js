@@ -71,6 +71,7 @@ $(function () {
   QUnit.test('Util.findShadowRoot should find the shadow DOM root', function (assert) {
     // Only for newer browsers
     if (typeof document.body.attachShadow !== 'function') {
+      assert.expect(0)
       return
     }
 
