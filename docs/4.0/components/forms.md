@@ -1089,6 +1089,21 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 </div>
 {% endexample %}
 
+Checked checkboxes and radios can also be disabled.
+
+
+{% example html %}
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled" checked disabled>
+  <label class="custom-control-label" for="customCheckCheckedDisabled">Check this custom checkbox</label>
+</div>
+
+<div class="custom-control custom-radio">
+  <input type="radio" id="radio3" name="radioCheckedDisabled" id="customRadioCheckedDisabled" class="custom-control-input" checked disabled>
+  <label class="custom-control-label" for="customRadioCheckedDisabled">Toggle this custom radio</label>
+</div>
+{% endexample %}
+
 ### Select menu
 
 Custom `<select>` menus need only a custom class, `.custom-select` to trigger the custom styles.
