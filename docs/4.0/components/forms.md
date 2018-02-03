@@ -83,6 +83,17 @@ For file inputs, swap the `.form-control` for `.form-control-file`.
 </form>
 {% endexample %}
 
+Range inputs can be adjusted to match textual inputs (with `width: 100%` and `display: block`) by adding `.form-control-range` to a range input.
+
+{% example html %}
+<form>
+  <div class="form-group">
+    <label for="exampleFormRange1">Example range input</label>
+    <input type="range" class="form-control-range" id="exampleFormRange1">
+  </div>
+</form>
+{% endexample %}
+
 ### Sizing
 
 Set heights using classes like `.form-control-lg` and `.form-control-sm`.
