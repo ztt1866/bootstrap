@@ -980,6 +980,16 @@ Our example forms show native textual `<input>`s above, but form validation styl
     <div class="invalid-feedback">Example invalid custom select feedback</div>
   </div>
 
+  <div class="form-group">
+    <input type="file" class="form-control-file" required>
+    <div class="invalid-feedback">Example invalid file input feedback</div>
+  </div>
+
+  <div class="form-group">
+    <input type="range" class="form-control-range" required>
+    <div class="invalid-feedback">Example invalid range input feedback</div>
+  </div>
+
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="validatedCustomFile" required>
     <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
