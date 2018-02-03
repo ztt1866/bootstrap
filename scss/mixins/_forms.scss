@@ -82,6 +82,17 @@
     }
   }
 
+  .form-control-file,
+  .form-control-range {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      ~ .#{$state}-feedback,
+      ~ .#{$state}-tooltip {
+        display: block;
+      }
+    }
+  }
+
   .custom-control-input {
     .was-validated &:#{$state},
     &.is-#{$state} {
